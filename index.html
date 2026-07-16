@@ -5,27 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" href="todo.css"></head>
-<body>
-    <div class="container">
-        <header>
+<body><div class="container"><header>
             <h1 style="color: var(--primary);">TASKS</h1>
             <div id="task-stats">0/0 Completed</div></header>
             <form class="task-form" id="task-form">
-            <input type="text" id="task-input" placeholder="What needs to be done?" required autocomplete="off">
+            <input type="text" id="task-input" placeholder="Enter Task">
             <select id="task-category">
                 <option value="Work">Work</option>
-                <option value="Personal">Personal</option>
-                <option value="Errands">Errands</option>
-                <option value="Health">Health</option>
-            </select>
+                <option value="Personal">Personal</option></select>
             <select id="task-priority">
                 <option value="Low">Low Priority</option>
                 <option value="Medium" selected>Medium Priority</option>
-                <option value="High">High Priority</option>
-            </select>
-            <button type="submit"><i class="fa-solid fa-plus"></i> Add</button>
-        </form>
-        </form>
+                <option value="High">High Priority</option></select>
+            <button type="submit">Add</button></form>
         <div class="filters" id="filters">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="active">Active</button>
