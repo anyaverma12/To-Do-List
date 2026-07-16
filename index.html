@@ -8,12 +8,12 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="tasks" style="color: var(--primary);">TASKS</h1>
-            <div class="stats" id="task-stats">0/0 Completed</div></header>
-        <form class="task-form" id="task-form">
-            <input type="text" id="task-input" placeholder="What needs to be done?" required autocomplete="off">
-            <select id="task-category"><option value="Work">Work</option><option value="Personal">Personal</option><option value="Errands">Errands</option><option value="Health">Health</option></select>
-            <select id="task-priority"><option value="Low">Low Priority</option><option value="Medium" selected>Medium Priority</option><option value="High">High Priority</option></select>
+            <h1 style="color: var(--primary);">TASKS</h1>
+            <div id="task-stats">0/0 Completed</div></header>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter Task">
+            <select id="category"><option value="Work">Work</option><option value="Personal">Personal</option><option value="Errands">Errands</option><option value="Health">Health</option></select>
+            <select id="priority"><option value="Low">Low Priority</option><option value="Medium" selected>Medium Priority</option><option value="High">High Priority</option></select>
             <button type="submit">Add</button></form>
         <div class="filters" id="filters">
             <button class="filter-btn active" data-filter="all">All</button>
