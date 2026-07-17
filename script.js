@@ -1,5 +1,6 @@
-// --- Initial Setup ---
-alert("Welcome!");
+a = prompt("please enter your name: ")
+a = a.trim()
+alert(`Welcome ${a}!`)
 let tasks = JSON.parse(localStorage.getItem('proTasks')) || [];
 let currentFilter = 'all';
 
